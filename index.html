@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/27a7cdcb66.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pomodoro-box">
+        <div class="pomodoro-types">
+          <button id="btnPomodoro" class="pomodoro-button active">
+            Pomodoro
+          </button>
+          <button id="btnShortBreak" class="pomodoro-button">
+            Short Break
+          </button>
+          <button id="btnLongBreak" class="pomodoro-button">Long Break</button>
+        </div>
+        <div class="pomodoro-time">
+          <time id="pomodoro-minutes">25</time>:<time id="pomodoro-seconds"
+            >00</time
+          >
+        </div>
+        <div class="pomodoro-buttons">
+          <button id="btnStart" class="pomodoro-button active">
+            <b>START</b>
+          </button>
+          <div class="btn-rotate">
+            <i class="fa-solid fa-repeat fa-xl icon-white" id="btnReset"></i>
+          </div>
+          <div class="hidden">
+            <i
+              id="btnSkip"
+              class="fa-solid fa-arrow-right fa-xl icon-white"
+            ></i>
+          </div>
+        </div>
+        <div class="pomodoro-checks"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

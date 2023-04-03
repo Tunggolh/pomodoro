@@ -1,0 +1,139 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  background: url("images/background.jpg") no-repeat;
+  background-size: cover;
+  color: #eeeeee;
+}
+
+.container {
+  height: 100vh;
+  justify-content: center;
+}
+
+#main-heading {
+  display: flex;
+}
+
+#pomodoro-heading {
+  -webkit-text-stroke: 1px black;
+}
+
+.container,
+.pomodoro-box,
+.pomodoro-time,
+.pomodoro-buttons,
+#pomodoro-heading {
+  display: flex;
+  align-items: center;
+}
+
+.container,
+.pomodoro-box {
+  flex-direction: column;
+}
+
+.pomodoro-box {
+  border-radius: 10px;
+  padding: 1rem 2rem 1.5rem;
+  position: relative;
+  width: 480px;
+}
+
+.pomodoro-box a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+#pomodoro-heading {
+  font-size: 1.5rem;
+}
+
+.pomodoro-time {
+  font-size: 7.5rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.pomodoro-types {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pomodoro-button {
+  background: rgb(24, 79, 230, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid rgba(103, 143, 255);
+  font-size: 1rem;
+  transition: 0.075s ease-out;
+}
+
+.pomodoro-button.active {
+  background: rgba(103, 143, 255);
+  border: 0;
+}
+
+.pomodoro-button:hover {
+  cursor: pointer;
+}
+
+.pomodoro-buttons {
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.btn-rotate {
+  transition: 0.5s linear;
+  transform: rotate(0deg);
+}
+
+#btnStart {
+  padding: 15px;
+}
+
+#btnStart:hover {
+  cursor: pointer;
+}
+
+#btnReset:hover {
+  cursor: pointer;
+}
+
+#btnSkip:hover {
+  cursor: pointer;
+}
+
+.icon-white {
+  color: #ffffff;
+}
+
+.pomodoro-checks {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.pomodoro-checks i {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.pomodoro-checks i.show {
+  opacity: 1;
+}

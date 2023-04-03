@@ -3,9 +3,18 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira Sans", sans-serif;
-  background: url("images/background.jpg") no-repeat;
+}
+
+html {
+  background: url(images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
   color: #eeeeee;
 }
 
@@ -43,20 +52,21 @@ body {
   width: 480px;
 }
 
-.pomodoro-box a {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-}
-
-#pomodoro-heading {
-  font-size: 1.5rem;
+@media only screen and (max-width: 667px) {
+  .pomodoro-box {
+    padding: 1rem;
+    width: 80%;
+  }
 }
 
 .pomodoro-time {
-  font-size: 7.5rem;
-  font-family: "Fira Sans", sans-serif;
+  font-size: 8rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .pomodoro-time {
+    font-size: 7rem;
+  }
 }
 
 .hidden {
@@ -68,6 +78,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+}
+
+@media only screen and (max-width: 667px) {
+  .pomodoro-types {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .pomodoro-button {
@@ -95,6 +114,17 @@ body {
   width: 100%;
   justify-content: space-evenly;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 667px) {
+  .pomodoro-buttons {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .pomodoro-button {
+    font-size: 0.75rem;
+  }
 }
 
 .btn-rotate {

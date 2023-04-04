@@ -164,6 +164,7 @@ const addMouseEvents = function (btn) {
     if (isTimerRunning && showAlertMessage()) {
       clearInterval(timeIntervalId);
       displayActiveTimer(btn);
+      btnStart.textContent = "START";
       isTimerRunning = false;
     }
   });

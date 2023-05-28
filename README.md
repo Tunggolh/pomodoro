@@ -9,4 +9,3 @@ A simple Pomodoro Timer using HTML, CSS, JavaScript
 3. Click `Start` button to start the timer.
 4. Click `🔁` button to reset the timer and checkmarks.
 5. Click `→` button to skip current timer and start at the next one.
-6. After completing four pomodoros, the timer will automatically select a long break, while for completing one to three pomodoros, a short break will be automatically selected. Each pomodoro completed will displays a checkmark up to four times.
